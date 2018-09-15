@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorWheel-outer-container {
+}
+
+.colorWheel-inner {
+  position: relative;
+  width: 150px;
+
+}
+
+.colorWheel-inner-1 {
+    animation-duration: 20s;
+    animation-name: "rotate360";
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.colorWheel-inner-2 {
+    animation-duration: 40s;
+    animation-name: "rotate360";
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    left: -153px;
+}
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
